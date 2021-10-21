@@ -39,10 +39,7 @@ namespace Transport_company
             }
             else
             {
-                Tail = (Tail + 1) % Company.Length;
-                First = (First + 1) % Company.Length;
-                Company[Tail] = auto;
-                return true;
+                return false;
             }
         }
         /// <summary>

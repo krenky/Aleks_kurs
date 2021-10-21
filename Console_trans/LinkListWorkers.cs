@@ -16,6 +16,7 @@ namespace Transport_company
         {
             Head = new Worker("Head", "Head", 0);
             Tail = Head;
+            Head.Next = Tail;
             Count = 0;
         }
         public bool Add(string famil, string position, int salary)//метод добавления работника
